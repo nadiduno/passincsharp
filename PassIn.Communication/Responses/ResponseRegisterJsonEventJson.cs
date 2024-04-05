@@ -1,5 +1,5 @@
 ﻿namespace PassIn.Communication.Responses;
-public  class ResponseRegisterventJson
+public  class ResponseRegisterJsonEventJson
 {
     public Guid Id { get; set; }
 }

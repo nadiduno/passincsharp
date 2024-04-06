@@ -32,11 +32,12 @@ public class EventsController : ControllerBase
             return StatusCode(StatusCodes.Status500InternalServerError, new ResponseErrorJson("Unknown error"));
         }
     }
-    [HttpPost]
+  
+    [HttpGet]
     [Route("{id}")]
-    [ProducesResponseType(typeof(ResponseRegisterJsonEventJson), StatusCodes.Status201Created)]
-    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
-    public IActionResult GetById([FromBody] Guid id)
+    [ProducesResponseType(typeof(ResponseEventJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    public IActionResult GetById([FromRoute] Guid id)
     {
         try
         {

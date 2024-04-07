@@ -21,7 +21,7 @@ Aplicação back-end em C# com .NET documentação da API com Swagger
   <br />
 </div>
 
-By DevRel <::heart:: /> [Nadi Duno](https://www.linkedin.com/in/nadiduno/) © 2024
+By DevRel 💜 [Nadi Duno](https://www.linkedin.com/in/nadiduno/) © 2024
 <br />
 <br />
 

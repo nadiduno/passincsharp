@@ -11,6 +11,31 @@ Aplicação back-end em C# com .NET documentação da API com Swagger
 [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/language-specification/documentation-comments) | [SQLite](https://www.sqlite.org/) | [Swagger](https://swagger.io/) | [Entity Framework](https://learn.microsoft.com/en-us/ef/core/)
 
 <br />
+#Requisitos
+##Requisitos funcionais
+
+    O organizador deve poder cadastrar um novo evento;
+    O organizador deve poder visualizar dados de um evento;
+    O organizador deve poser visualizar a lista de participantes;
+    O participante deve poder se inscrever em um evento;
+    O participante deve poder visualizar seu crachá de inscrição;
+    O participante deve poder realizar check-in no evento;
+
+##Regras de negócio
+
+    O participante só pode se inscrever em um evento uma única vez;
+    O participante só pode se inscrever em eventos com vagas disponíveis;
+    O participante só pode realizar check-in em um evento uma única vez;
+
+##Requisitos não-funcionais
+
+    O check-in no evento será realizado através de um QRCode;
+
+## Banco de dados
+Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
+
+##Documentação da API (Swagger)
+<br />
 
 <div>
   <img 
